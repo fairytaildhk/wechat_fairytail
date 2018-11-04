@@ -1,0 +1,58 @@
+<!--index.wxml-->
+<view class="header">
+  <view bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <text>{{userInfo.province}}  {{userInfo.city}}</text>
+  </view>
+  <view class="usermotto1">
+    <text class="text">    </text>
+  </view>
+
+  <!-- <button onclick="getElementById('demo').innerHTML=Date()">现在的时间：</button> -->
+
+
+
+</view>
+
+<view class="center">
+  <text class="text">系统信息</text>
+</view>
+
+
+<view class="info-box">
+  <text class="info-text">手机品牌：{{systemInfo.brand}}\n</text>
+  <text class="info-text">手机型号：{{systemInfo.model}}\n</text>
+  <text class="info-text">设备像素比：{{systemInfo.pixelRatio}}\n</text>
+  <text class="info-text">屏幕宽度：{{systemInfo.screenWidth}}\n</text>
+  <text class="info-text">屏幕高度：{{systemInfo.screenHeight}}\n</text>
+  <text class="info-text">窗口宽度：{{systemInfo.windowWidth}}\n</text>
+  <text class="info-text">窗口高度：{{systemInfo.windowHeight}}\n</text>
+  <text class="info-text">微信设置的语言：{{systemInfo.language}}\n</text>
+  <text class="info-text">微信版本号：{{systemInfo.version}}\n</text>
+  <text class="info-text">操作系统版本：{{systemInfo.system}}\n</text>
+  <text class="info-text">客户端平台：{{systemInfo.platform}}\n</text>
+</view>
+<view class="center">
+  <text class="text">位置信息</text>
+</view>
+<view class="info-box">
+  <text class="info-text">纬度：{{location.latitude}}\n</text>
+  <text class="info-text">经度：{{location.longitude}}\n</text>
+  <text class="info-text">速度：{{location.speed}}\n</text>
+  <text class="info-text">位置精确度：{{location.accuracy}}\n</text>
+  <text class="info-text">高度(m)：{{location.altitude}}\n</text>
+  <text class="info-text">垂直精度(m)：{{location.verticalAccuracy}}\n</text>
+  <text class="info-text">水平精度(m)：{{location.horizontalAccuracy}}\n</text>
+</view>
+
+<view class="usermotto">
+  <text class="user-motto">{{motto}}</text>
+</view>
+<view class='btn-line'>
+  <button bindtap="changeName" size='mini' type='primary'> Click me </button>
+  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</text>
+  <button bindtap="systemInfo" size='mini' class='btn'> Message </button>
+</view>
+
+<view style="width:100%;height:1rpx;"></view>

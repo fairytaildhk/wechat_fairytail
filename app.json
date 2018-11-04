@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/secondpages/index2"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Fairytail",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#06bd04",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/首页.png",
+        "selectedIconPath": "pages/images/首页.png"
+      },
+      {
+        "pagePath": "pages/secondpages/index2",
+        "text": "电影",
+        "iconPath": "pages/images/清单.png",
+        "selectedIconPath": "pages/images/清单.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+<!--index2.wxml-->
+<view>
+<text class='userinfo'>- 电影 -</text>
+</view>
+<view class='userinfo'>
+<text>复仇者联盟</text>
+</view >
+
+ <cover-view class="img">
+
+<image src="../images/b.png" mode='aspectFit'></image> 
+</cover-view> 
+ <view class="btn-area">
+  <view class="body-view">
+    <text>{{text}}</text>
+    <button bindtap="add">add line</button>
+    <view> </view>
+    <button bindtap="remove">remove line</button>
+  </view>
+</view> 
